@@ -47,7 +47,7 @@ Start the match
 	If guests do not start loading a level when the host does,
 		and change their character, the game will crash
 
-Consecutive races
+Consecutive matches
 	Choose "Repeat" to repeat the match. Everyone has to repeat.
 	Choose "Quite" to quit to the menu. Everyone has to quit.
 
