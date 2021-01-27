@@ -1,0 +1,68 @@
+If you get an error for missing VCRUNTIME 140_1 dll
+	Go to this link:            https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
+	Download and run:    vc_redist.x64.exe
+
+Host a NodeServer
+	A node server can be hosted by a player or a non-player,
+	it handles all the networking that makes the game work.
+	Whoever runs NodeServer.exe must have port 1234 open on their router
+	The computer hosting the NodeServer can be the same computer that 
+	hosts the game, or it could be a different computer
+	
+Connect to NodeServer
+	Open Client.exe, and follow the directions on-screen, it explains how
+	to connect and play. Client.exe is smart enough to work with any
+	emulator. It is confirmed to work with ePSXe 2.0.5 and Bizhawk, it is
+	confirmed not to work with Rpcs3, it will probably work in any other emu
+
+	Connection Lost:
+		While trying to connect
+			- You enter the wrong IP
+			- The server is down
+			- The server did not use port forwarding
+			- The server is full
+			- The server has a match in progress
+		While in a match
+			- The server shut down
+			- A member of your group disconnected, and the
+				NodeServer resets (which is a design choice)
+
+Host a Game
+	The host of any game is the first client to connect to the NodeServer.
+	Hosting a game means you are the one that chooses the map,
+	aside from that, you are no different than any other client.
+
+Join a Game
+	All additional clients who join after the host, are guests.
+
+Avoid bugs:
+	-If you are a game-host, you must wait for everyone to be in the AI selection
+	-If you are a game-guest, do not press any buttons while in AI selection.
+	-If one person disconnects, everyone disconnects, NodeServer can reset
+		itself, and run infinitely, while Clients need to close and reopen
+
+Start the match
+	The host chooses the character, then starts the race.
+	All guests should automatically mimic the host.
+	If guests do not start loading a level when the host does,
+		and change their character, the game will crash
+
+Consecutive races
+	Choose "Repeat" to repeat the match. Everyone has to repeat.
+	Choose "Quite" to quit to the menu. Everyone has to quit.
+
+Most commonly asked questions
+
+Q: When will there be 8P support?
+A: 8P already works, but it is disabled in the consumer-release because the lag 
+	is horrible; that can be fixed with implementing UDP networking. Also,
+	it's restricted due to vram limitation.
+
+Q: When will weapons work?
+A: Next step in project
+
+Q: When will this server/client stuff become more user-friendly
+A: I want to build a server farm, with match-making abilities, so that nobody needs to 
+	worry about hosting NodeServers, and so that everyone can connect to the
+	same place without worrying about IPs, but I dont have money to buy a server
+	farm, and also, the server software for that is currently not done
