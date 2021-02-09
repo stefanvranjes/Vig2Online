@@ -2,7 +2,7 @@
 
 Currently only supports private lobbies.
 
-![alt text](https://github.com/stefanvranjes/Vig2Online/blob/MENU.PNG?raw=true)
+![alt text](https://github.com/stefanvranjes/Vig2Online/blob/main/MENU.PNG?raw=true)
 
 ## Patching
 
