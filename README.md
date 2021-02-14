@@ -7,6 +7,7 @@ Currently only supports private lobbies.
 ## Patching
 
 Use the VigOnlineX64.poc.exe or VigOnlineX86.poc.exe to patch the original NTSC-US (slus-00868) Track 01 .bin file.
+
 When updating from previous versions of this mod, you must patch your .bin file again to be up-to-date.
 
 ## Contributing
